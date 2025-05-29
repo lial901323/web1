@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 1046px;
+  height: 64px;
+  margin: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 252px;
+  height: 64px;
+  background-image: url(../images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+}
+
+.logo h1 {
+  position: absolute;
+  top: 21px;
+  left: 63px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 6px;
+  color: #3E3F43;
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 62px;
+}
+
+.main-nav li a {
+  color: #612999;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.main-nav li a:hover {
+  color: #612999;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+/* ------------------------WELCOME------------------------ */
+
+.front-img {
+  background-image: url(../images/photoopenercat.webp);
+  height: 797px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+#welcome {
+  font-family: 'Nunito', sans-serif;
+  background-color: rgba(42, 42, 255, 0);
+  height: 230px;
+  width: 448px;
+  padding: 32px;
+}
+
+#welcome h1 {
+  display: inline;
+  color: rgb(102, 38, 145);
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 100%;
+}
+
+#welcome p {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+/* ------------------------ABOUT------------------------ */
+
+.about {
+  font-family: 'Rubik', sans-serif;
+  width: 1136px;
+  height: 382px;
+  margin: 32px;
+}
+
+.about h1 {
+  color: #333333; /* changed from purple to normal */
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.about p {
+  color: black;
+  font-size: 20px;
+}
+
+/* --------------------Popular pieces-------------------- */
+
+.product-title {
+  color: #612999; /* purple */
+  font-family: 'Rubik', sans-serif;
+  margin-left: 32px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 880px;
+  margin-left: 32px; /* aligned left */
+  font-family: 'Rubik', sans-serif;
+  color: #612999;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.container > section img {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 38px;
+  width: 376px;
+  height: 276px;
+  margin-bottom: 220px;
+  box-shadow: 0px 6px 40px 0px #3984BB0D;
+}
+
+.container > .card {
+  display: flex;
+  position: relative;
+  background-color: #EFECFF;
+  text-align: left;
+  width: 376px;
+  height: 496px;
+  border-radius: 38px;
+}
+
+.container > .card h2 {
+  position: absolute;
+  font-family: 'Abel', sans-serif;
+  color: black;
+  width: 221px;
+  height: 38px;
+  margin-top: 297px;
+  margin-left: 32px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.container > .card h3 {
+  position: absolute;
+  font-family: 'Abel', sans-serif;
+  color: #612999;
+  width: 221px;
+  height: 38px;
+  margin-top: 415px;
+  margin-left: 32px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.container > .card p {
+  position: absolute;
+  font-family: 'Abel', sans-serif;
+  color: #333333;
+  margin-top: 342px;
+  margin-left: 32px;
+  max-width: 315px;
+  max-height: 96px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.container > .card .heart {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  margin-top: 35px;
+  margin-left: 287px;
+}
+
+.container > .card .cart {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  margin-top: 406px;
+  margin-left: 262px;
+}
+
+/* ------------------------FOOTER------------------------ */
+
+footer {
+  display: grid;
+  font-family: 'Rubik', sans-serif;
+  gap: 150px;
+  background-color: #EFECFF;
+  height: 287px;
+  margin-top: 278px;
+}
+
+.footer-grid {
+  display: flex;
+  position: relative;
+  height: 126px;
+  gap: 150px;
+  margin: 32px;
+}
+
+.footer-grid > .footer-card {
+  display: flex;
+  position: relative;
+  /* Removed red background */
+}
+
+.footer-grid > .footer-card h1 {
+  /* Removed blueviolet background */
+  color: #333333;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 16px;
+  height: 28px;
+}
+
+.footer-grid > .footer-card ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  margin-top: 16px;
+  top: 16px;
+  /* Removed green background */
+}
+
+.footer-grid > .footer-card ul li a {
+  /* Removed blue background */
+  color: #333333;
+  margin-top: 16px;
+}
+
+.icons {
+  position: absolute;
+  margin-top: 182px;
+  margin-left: 32px;
+}
+
+.icons img {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+}
+
+/* ------------------------ Container3 ------------------------ */
+
+.container3 {
+  width: 1052px;
+  height: 300px;
+  border-width: 4px;
+  display: grid;
+  grid-template-columns: 300px 388.29px 300px;
+  margin: 32px;
+  gap: 32px;
+}
+
+.container3 img {
+  width: 100%;
+  height: 300px;
+  border: 4px solid #E6DBFE;
+}
+
+/* ------------------------ List Page 2 ------------------------ */
+
+.list-page2 {
+  font-family: 'Rubik', sans-serif;
+  height: 346px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.list-page2 h1 {
+  color: #612999;
+  font-size: 40px;
+  margin-left: 32px;
+  width: 448px;
+}
+
+.list-page2 ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 32px;
+  width: 448px;
+}
+
+.list-page2 ul li {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.list-page2 ul li a {
+  position: absolute;
+  margin-top: 31px;
+  margin-left: 16px;
+  color: black;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 14px;
+}
+.rocket-icon {
+  display: inline-block;
+  padding: 10px; /* Adds space around the icon */
+  border-radius: 50%; /* Makes the background circular */
+  background-color: #FF6347; /* Change this to any color you want for the circle */
+  transition: background-color 0.3s ease; /* Optional: smooth color transition on hover */
+}
+
+/* ------------------------ Video Section ------------------------ */
+
+.video {
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  background-color: #ffffff;
+  height: 575px;
+  width: 1136px;
+  margin: 32px;
+}
